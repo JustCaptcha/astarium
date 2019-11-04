@@ -3,7 +3,8 @@
     <header>
       <v-app-bar app>
         <v-toolbar-title class="headline text-uppercase">
-          <span class="font-weight-light">Expansible Table</span>
+          <img class="logo" src="../assets/astarium.svg">
+          <span class="font-weight-light">Astarium</span>
         </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -25,3 +26,11 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+</style>
