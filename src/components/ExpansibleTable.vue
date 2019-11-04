@@ -63,7 +63,7 @@
         <v-icon>mdi-settings</v-icon>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <v-row justify="center">
+        <v-row class="settings-1" justify="center" align="center">
             <v-btn color="yellow" @click="clearData">
               <v-icon>mdi-trash-can-outline</v-icon>
               Erase values
@@ -324,5 +324,8 @@ export default Vue.extend({
     text-align: center;
     white-space: nowrap;
     transform: translate(48vw, -1.8rem) translateX(-65%); /* a bit messy */
+  }
+  .settings-1 > :not(:last-child) {
+    margin-right: 3rem;
   }
 </style>
